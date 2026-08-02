@@ -4,8 +4,13 @@ return {
 	},
 	{
 		"yantze/pt_black",
-		config = function()
-			vim.cmd.colorscheme("pt_black")
-		end
+	},
+	{
+	  "piyush-ppradhan/naysayer.vim",
+	  lazy = false,
+	  priority = 1000,
+	  config = function()
+		vim.cmd.colorscheme("naysayer")
+	  end,
 	}
 }
