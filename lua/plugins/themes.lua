@@ -9,8 +9,17 @@ return {
 	  "piyush-ppradhan/naysayer.vim",
 	  lazy = false,
 	  priority = 1000,
+	},
+	{
+	  "zaki/zazen",
+	},
+	{
+	  "andreasvc/vim-256noir",
+	},
+	{
+	  "ryanpcmcquen/true-monochrome_vim",
 	  config = function()
-		vim.cmd.colorscheme("naysayer")
+		vim.cmd.colorscheme("true-monochrome")
 	  end,
 	}
 }
