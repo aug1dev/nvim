@@ -18,8 +18,11 @@ return {
 	},
 	{
 	  "ryanpcmcquen/true-monochrome_vim",
+	},
+    {
+      "tpope/vim-vividchalk",
 	  config = function()
-		vim.cmd.colorscheme("true-monochrome")
+		vim.cmd.colorscheme("vividchalk")
 	  end,
-	}
+    }
 }

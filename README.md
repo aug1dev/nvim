@@ -1,0 +1,26 @@
+# NVIM
+
+## Plugins
+- blink.cmp
+- bufferline.nvim
+- Comment.nvim
+- flash.nvim
+- lazy.nvim
+- lualine.nvim
+- mason-lspconfig.nvim
+- mason.nvim
+- naysayer.vim
+- nvim-autopairs
+- nvim-lspconfig
+- nvim-tree.lua
+- nvim-web-devicons
+- plenary.nvim
+- pt_black
+- Relaxed-Green
+- telescope-fzf-native.nvim
+- telescope.nvim
+- todo-comments.nvim
+- true-monochrome_vim
+- vim-256noir
+- vim-vividchalk
+- zazen
