@@ -1,4 +1,5 @@
 local o = vim.o
+
 o.number = true
 o.relativenumber = true
 o.signcolumn = "yes"
@@ -8,3 +9,5 @@ o.expandtab = false
 o.softtabstop = 4
 o.winborder = "rounded"
 o.wrap = false
+o.clipboard = "unnamedplus"
+
