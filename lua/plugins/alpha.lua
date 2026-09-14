@@ -3,24 +3,23 @@ return {
 	dependencies = { 'nvim-tree/nvim-web-devicons' },
 	config = function()
 		local alpha = require("alpha")
-		local startify = require("alpha.themes.startify")
+		local dashboard = require("alpha.themes.dashboard")
 
-		startify.file_icons.provider = "devicons"
+		dashboard.section.header.val = {
+			[[  ___  _   _ _____ _   _ _____ _____ ]],
+			[[ / _ \| | | |  __ \ | | /  ___|_   _|]],
+			[[/ /_\ \ | | | |  \/ | | \ `--.  | |  ]],
+			[[|  _  | | | | | __| | | |`--. \ | |  ]],
+			[[| | | | |_| | |_\ \ |_| /\__/ / | |  ]],
+			[[\_| |_/\___/ \____/\___/\____/  \_/  ]],
+         }
 
-
-		startify.section.val = {
-			[[ AUGUST ]]
+		dashboard.section.buttons.val = {
+			dashboard.button("f", "󰈞  Find file" , ":Telescope find_files<cr>"),
+			dashboard.button("r", "󰦛  Restore" , ":AutoSession restore<cr>"),
+			dashboard.button("q", "󰈆  Quit" , ":q!<cr>"),
 		}
 
-		startify.section.top_buttons.val = {
-			startify.button("f", "󰈞  Find file" , "<leader>ff"),
-			startify.button("r", "󰦛  Restore" , "AutoSession restore<cr>"),
-		}
-
-		startify.section.mru.val = { { type = "padding", val = 0 } }
-		startify.section.mru_cwd.val = { { type = "padding", val = 0 } }
-
-
-		alpha.setup(startify.config)
+		alpha.setup(dashboard.config)
 	end,
 }
