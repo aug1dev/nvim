@@ -31,3 +31,7 @@ map('n', '<leader>fs', builtin.lsp_document_symbols)
 -- Mini.Tabline
 map("n", "<tab>", ":bnext<cr>")
 map("n", "<s-tab>", ":bprevious<cr>")
+
+-- Lsp
+map("n", "<leader>d", vim.diagnostic.open_float)
+map("n", "<leader>ca", vim.lsp.buf.code_action)
